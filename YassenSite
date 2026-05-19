@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yassen × Anas</title>
+
+  <style>
+    body{
+      margin:0;
+      font-family:Arial;
+      background:linear-gradient(135deg,#111,#333);
+      color:white;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+      text-align:center;
+    }
+
+    .box{
+      background:rgba(255,255,255,0.1);
+      padding:25px;
+      border-radius:20px;
+      width:350px;
+      backdrop-filter:blur(10px);
+    }
+
+    h1{
+      color:#00ffcc;
+    }
+
+    input{
+      width:80%;
+      padding:10px;
+      border:none;
+      border-radius:10px;
+      margin-top:10px;
+      text-align:center;
+    }
+
+    button{
+      padding:10px 20px;
+      border:none;
+      border-radius:10px;
+      background:#00ffcc;
+      cursor:pointer;
+      margin-top:10px;
+      font-size:16px;
+    }
+
+    img{
+      width:220px;
+      border-radius:15px;
+      margin-top:15px;
+      border:3px solid white;
+    }
+
+    .message{
+      display:none;
+      margin-top:20px;
+      line-height:1.8;
+      font-size:18px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="box">
+
+  <h1>🤝 Yassen × Anas</h1>
+
+  <p>اكتب الباسورد</p>
+
+  <input type="password" id="password" placeholder="الباسورد">
+
+  <br>
+
+  <button onclick="checkPassword()">دخول</button>
+
+  <div class="message" id="message">
+
+    <img src="1000254877.png">
+
+    <h2>🎵 صحبي يا صحبي - بهاء سلطان</h2>
+
+    <p>
+      يا عم إنت مش صاحبي بس، إنت النسخة اللي لو كانت اتعملت في المصنع كانوا كتبوا عليها (ممنوع التكرار 🤝). ساعات بحس إنك متربّي معايا بالغلط من كتر ما فاهمني، وساعات تانية بحس إنك عايز تتبعت صيانة بس برضو بنستحملك 😄. بس في الآخر إنت أحسن صاحب يجنني ويضحكني في نفس الوقت
+    </p>
+
+  </div>
+
+</div>
+
+<script>
+
+function checkPassword(){
+
+  let pass = document.getElementById("password").value;
+
+  if(pass === "a5oyaa"){
+
+    document.getElementById("message").style.display = "block";
+
+  }else{
+
+    alert("a5oyaa");
+
+  }
+
+}
+
+</script>
+
+</body>
+</html>
+</body>
+</html>
